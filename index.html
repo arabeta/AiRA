@@ -1,4 +1,44 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Map</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <style>
+    #map{
+        height: 900px;
+        width: 100%;
+    }
+    </style>
+    <script>
+        function initMap(){
+            var options = {
+                zoom:11,
+                center:{lat:34.621472, lng:-79.006103} 
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFuBXBXmmLPDVnjWngXa8cwOMzLYBSfk&callback=initMap"
+      async
+    ></script>
+  </body>
+</html>
+
+
+
+
+
+
+<!-- 
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -27,4 +67,4 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnZr3431Bp64wfHCllEyMGeEVz-_fG49s&callback=initMap">
         </script>
     </body>
-</html>
+</html>  -->
