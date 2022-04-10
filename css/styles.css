@@ -1,0 +1,20 @@
+header {
+    background-color: #8AAAE5;
+    min-height: 10vh;
+}
+
+.nobutton {
+    background: none;
+    border: none;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.icon-size {
+    height: 32px;
+    width: 32px;
+}
+
+.aira{
+    margin-left: 1vw;
+}
