@@ -20,7 +20,7 @@
             document.getElementById('lon').textContent = longitude;
             console.long(data);
         }
-         // Calling that async function in a set interval
+        // Calling that async function in a set interval
         //  setInterval(function() {
         //     getapi(api_url);
         //  }, 100000)
