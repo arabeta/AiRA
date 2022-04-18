@@ -10,21 +10,23 @@
         async function getapi(url) {
             
             // Storing response
-            const response = await fetch(url);
+            const response = await fetch(url)
             // Storing data in form of JSON
-            var dataJS = await response.json();
-            const {time_stamp} = dataJS;
+            var dataJS = await response.json()
+
+            const {data} = dataJS;
             // Access the first element of the array within the json from the api_url
-            const sens_id= dataJS.data[0][0];
-            const latitude_2 = dataJS.data[0][1];
-            const longitude_2 = dataJS.data[0][2];
-            const pm_cf_1= dataJS.data[0][3];
-
-            // make a function to return all element values
-
-            /*document.getElementById('time').textContent = time_stamp;
-            document.getElementById('lat').textContent = latitude_2;
-            document.getElementById('lon').textContent = longitude_2;*/
+            const sens_id= data[0][0];
+            const latitude = data[0][1];
+            const longitude = data[0][2];
+            const pm_cf_1= data[0][3];
+            document.getElementById('lat').textContent = latitude;
+            document.getElementById('lon').textContent = longitude;
         }
+            
 
-        getapi(api_url);
+
+        
+
+        
+        
