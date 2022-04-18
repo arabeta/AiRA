@@ -1,0 +1,8 @@
+{
+    "name": "AiRA",
+    "short_name": "AiRA",
+    "start_url": ".",
+    "background_color": "#66baff4d",
+    "theme_color": "#66baff",
+    "display": "standalone"
+}

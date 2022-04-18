@@ -1,0 +1,17 @@
+header {
+    background: #66baff4d;
+    min-height: 10vh;
+}
+
+.nobutton {
+    background: none;
+    border: none;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.aira{
+    margin-left: 2vw;
+    height: 64px;
+    width: 64px;
+}
