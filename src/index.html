@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#66baff">
     <script src="./index.js"></script>
-    <script src="./api.js"></script>
     <script src="./event.js"></script>
   </head>
 
@@ -32,9 +31,14 @@
                     <button class = "nobutton">
                         <i class="fa-solid fa-user fa-xl"></i>
                     </button>
-                    <button class = "nobutton nav__toggle">
+                    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+                        
+                    </nav>
+                    <!-- <button  class = "nobutton">
                         <i class="fa-solid fa-bars fa-xl"></i>
-                    </button>
+                    </button> -->
+                    
+                    
                 </div>
             </div>
             
@@ -105,9 +109,12 @@
                         map: map,
                         label: {color: '#000', fontSize: '12px', fontWeight: '600',text: data[i][3].toString()},
                     });
-                    // marker.addListener("click", () => {
-                    //     //Add click event for sidebar
-                    // });   
+                    marker.addListener("click", () => {
+                        $("#sidebar").toggleClass("move-to-left");
+                        $("#sidebar-tab").toggleClass("move-to-left");
+                        $("main").toggleClass("move-to-left-partly");
+                        $(".arrow").toggleClass("active");
+                    });   
                 }
             }
             getapi(api_url); 
