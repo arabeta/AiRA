@@ -51,7 +51,7 @@
                 var dataJS = await response.json()
 
                 const {data} = dataJS;
-                // Access the first element of the array within the json from the api_url
+                // Access the data such as lat, long, and pm2.5cf1 of the nested array within the json from the api_url
                 for(let i = 0; i < data.length; i++) {
                     var color;
                     if(data[i][3] <= 12.0 ){
