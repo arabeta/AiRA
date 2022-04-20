@@ -39,24 +39,33 @@
             
         </header>
 
+        <header class = "main">
+            <div class = "infowindow">
+                <h1>Dummy Data</h1>
+            </div>
+        
+            <div id="map"></div>
+
+            <style>
+            #map{
+                height:90vh;
+                width: 80%;
+            }
+            </style>
+            <script src="src\api.js"></script>
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFuBXBXmmLPDVnjWngXa8cwOMzLYBSfk&callback=initMap"
+            async
+            >
+            </script>
+
+            <script src = "api.js"></script>
+
+
     <!--The div element for the map -->
-    <div id="map"></div>
-
-    <style>
-    #map{
-        height:90vh;
-        width: 100vw;
-    }
-    </style>
-    <script src="src\api.js"></script>
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTFuBXBXmmLPDVnjWngXa8cwOMzLYBSfk&callback=initMap"
-      async
-    ></script>
-
-    <script src = "api.js"></script>
-  </body>
+        </header>
+    </body>
 </html>
 
 
