@@ -26,8 +26,8 @@
 
         function initMap(){
             var options = {
-                zoom:11,
-                center:{lat:35.9132, lng:-79.0558} 
+                zoom:12,
+                center:{lat:35.8543, lng:-78.8222} 
             }
             var map = new google.maps.Map(document.getElementById('map'), options);
 
@@ -71,13 +71,13 @@
                         position: new google.maps.LatLng(data[i][1], data[i][2]),
                         icon: {
                             path: google.maps.SymbolPath.CIRCLE,
-                            scale: 12,
+                            scale: 20,
                             fillColor: color,
                             fillOpacity: 0.7,
                             strokeWeight: 0.4
                         },
                         map: map,
-                        label: {color: '#000', fontSize: '12px', fontWeight: '600',text: data[i][3].toString()},
+                        label: {color: '#000', fontSize: '15px', fontWeight: '600',text: data[i][3].toString()},
                     });
 
                     //This is just a placeholder, can change.
