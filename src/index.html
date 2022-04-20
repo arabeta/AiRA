@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>AiRA</title>
-
+    <link rel="shortcut icon" href="img/AiRA.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link rel = "stylesheet" href = "css/styles.css">
@@ -42,6 +42,7 @@
         <header class = "main">
             <div class = "infowindow">
                 <h1>Dummy Data</h1>
+                <script src='mean.js'></script>
             </div>
         
             <div id="map"></div>
@@ -62,10 +63,16 @@
 
             <script src = "api.js"></script>
 
+    <script src = "api.js"></script>
 
-    <!--The div element for the map -->
-        </header>
-    </body>
+    <!--<script>
+        if ('serviceWorker' in navigator){
+            window.addEventListener('load',() =>{
+                navigator.serviceWorker.register('\sw.js');
+            });
+        }
+    </script>-->
+  </body>
 </html>
 
 
