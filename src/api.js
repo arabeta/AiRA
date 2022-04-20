@@ -24,6 +24,10 @@
             document.getElementById('lon').textContent = longitude;
         }*/
 
+        var mean_25;
+        var mean_1;
+        var mean_10;
+
         function initMap(){
             var options = {
                 zoom:12,
@@ -54,8 +58,11 @@
                 // Access the data such as lat, long, and pm2.5cf1 of the nested array within the json from the api_url
                 for(let i = 0; i < data.length; i++) {
                     const pm_25 = data[i][3];
+                    mean_25 += pm_25;
                     const pm_1 = data[i][4];
+                    mean_1 += pm_1;
                     const pm_10 = data[i][5];
+                    mean_10 += pm_10;
 
                     var color;
                     var contentString;
@@ -158,7 +165,6 @@
             }
             getapi(api_url); 
         }
-            
 
 
         
