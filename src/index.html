@@ -13,17 +13,51 @@
     <meta name="theme-color" content="#66baff">
     <script src="./index.js"></script>
     <script src="./event.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Search Bar-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+       $( document ).ready(function() {
+      $('[data-toggle=search-form]').click(function() {
+          $('.search-form-wrapper').toggleClass('open');
+          $('.search-form-wrapper .search').focus();
+          $('html').toggleClass('search-form-open');
+        });
+        $('[data-toggle=search-form-close]').click(function() {
+          $('.search-form-wrapper').removeClass('open');
+          $('html').removeClass('search-form-open');
+        });
+      $('.search-form-wrapper .search').keypress(function( event ) {
+        if($(this).val() == "Search") $(this).val("");
+      });
+      
+      $('.search-close').click(function(event) {
+        $('.search-form-wrapper').removeClass('open');
+        $('html').removeClass('search-form-open');
+      });
+      });
+    </script>
   </head>
 
   <body style="margin: 0;"></body>
 
   <body>
-        <!-- Navigation bar -->
+        <!-- Navigation bar
         <header class = "navbar">
             <div class = "container-fluid">
                 <span>
                     <img class = "aira" src = "img/AiRA_dark_512.png">
                 </span>
+                
+
                 <div class = "float-end">
                     <button class = "nobutton">
                         <i class="fa-solid fa-magnifying-glass fa-xl"></i>
@@ -37,8 +71,80 @@
                 </div>
             </div>
             
+        </header> -->
+        <header>
+            <nav id="main-nav" role="navigation">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-2 col-sm-4 col-5">
+                      <a href="index.html">
+                        <img alt="AiRA Logo" class="img-fluid py-3" src="img/AiRA_light_655.png" aria-role="logo">
+                      </a>
+                    </div>
+                    <div class="col-xl-9 col-lg-10 col-sm-8 col-7">
+                      <ul class="navbar-nav flex-row justify-content-end flex-wrap align-items-center mr-lg-4 mr-xl-0">
+             <!---->    <div class="hidden-xs navbar-form navbar-right">
+                            <a onclick="documentTrack('#search');" href="#search" class="search-form-tigger btn btn-success"  data-toggle="search-form"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </div> 
+                        <div class="visible-xs navbar-form navbar-right">
+                            <input type="text" name="search" class="search form-control" placeholder="Search">
+                        </div>
+                        <li class="d-none d-sm-flex nav-item my-3 my-lg-0 mr-5 mr-lg-4 mr-xl-5"> 
+                            <button id="sidenav-open-btn" class="menu-hamburger position-absolute pointer p-0">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </a>
+                          <ul class="list-unstyled">
+                            <li class="text-uppercase mb-0">
+                              <div class="dropdown position-absolute w-md-550p w-xl-600p right-0 p-2 px-md-5 pb-md-5 pt-md-4 site-explorer">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <ul class="pl-0 list-unstyled">
+                                      <li class="mb-0 text-black">
+                                        <a class="px-2 px-lg-3 text-white d-block w-100 h-100" href="/events/">Conference</a>
+                                      </li>
+                                      <li class="mb-0 text-black"><a class="px-2 px-lg-3 text-white d-block w-100 h-100" href="/careers/">Apply for a Job</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <ul class="pl-0 list-unstyled">
+                                      <li class="mb-0 text-black">
+                                        <a class="px-2 px-lg-3 text-white d-block w-100 h-100" href="/events/">Launch Schedule</a>
+                                      </li>
+                                      <li class="mb-0 text-black">
+                                        <a class="px-2 px-lg-3 text-white d-block w-100 h-100" href="/contact/">Training</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-sm-12 text-center mt-4">
+                                    <a class="btn btn-white btn-lg d-none d-md-block" href="/search.stml">Login/Sign Up</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>    
+              <div class="search-form-wrapper">
+                <form class="search-form" id="" action="">
+                   <div class="input-group">
+                      <input type="text" name="search" class="search form-control" placeholder="Search">
+                      <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i>
+                      </span>
+                      <span class="input-group-addon" id="basic-addon2"><i class="fa fa-window-close" aria-hidden="true"></i>
+                      </span>
+                   </div>
+                </form>
+             </div>
         </header>
-
+    
     <!--The div element for the map -->
     <div id="map"></div>
 
@@ -57,12 +163,12 @@
 
     <script src = "api.js"></script>
 
-    <script>
+    <!--<script>
         if ('serviceWorker' in navigator){
             window.addEventListener('load',() =>{
                 navigator.serviceWorker.register('\sw.js');
             });
-        }
+        }-->
     </script>
   </body>
 </html>
