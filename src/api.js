@@ -23,11 +23,27 @@
             document.getElementById('lat').textContent = latitude;
             document.getElementById('lon').textContent = longitude;
         }*/
+        function search() {
+            let input = document.getElementById('searchbar').value
+            input=input.toLowerCase();
+              
+            for (i = 0; i < x.length; i++) { 
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display="none";
+                }
+                else {
+                    x[i].style.display="list-item";                 
+                }
+            }
+        }
 
         function initMap(){
+            var search_id;
+            var lat_search=35.8543;
+            var long_search=-78.8222;
             var options = {
-                zoom:12,
-                center:{lat:35.8543, lng:-78.8222} 
+                zoom:11.5,
+                center:{lat:lat_search, lng:long_search} 
             }
             var map = new google.maps.Map(document.getElementById('map'), options);
 
