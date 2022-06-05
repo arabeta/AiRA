@@ -5,7 +5,7 @@
 </href>
 </h1>
 
-Webapp for Purple air with the ECUIPP lab project under the Department of Environmental Sciences and Engineering at UNC Chapel Hill
+Webapp for Purple air monitors with the ECUIPP lab project under the Department of Environmental Sciences and Engineering at UNC Chapel Hill
 
 AiRA is currently development by team ARA. 
 
