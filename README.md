@@ -14,4 +14,4 @@ ARA members (in no particular order):
 
 Checkout our prototype <a href=arabeta.github.io/AiRA/src>v1</a>
 
-Checkout our prototype <a href=arabeta.github.io/AiRA/src>v2</a>
+Checkout our prototype <a href=arabeta.github.io/AiRA-V2/src>v2</a>
