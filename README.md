@@ -12,4 +12,4 @@ AiRA is currently development by team ARA.
 ARA members (in no particular order):
 <>Arjun Pajni<>, Ronit Ray , Alexander Zheng
 
-Checkout our prototype <href=arabeta.github.io/AiRA/src>v1</href>
+Checkout our prototype <a href=arabeta.github.io/AiRA/src>v1</a>
