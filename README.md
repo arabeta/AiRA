@@ -13,3 +13,5 @@ ARA members (in no particular order):
 <>Arjun Pajni<>, Ronit Ray , Alexander Zheng
 
 Checkout our prototype <a href=arabeta.github.io/AiRA/src>v1</a>
+
+Checkout our prototype <a href=arabeta.github.io/AiRA/src>v2</a>
