@@ -9,7 +9,7 @@ Webapp for Purple air monitors with the ECUIPP lab project under the Department 
 AiRA is currently development by team ARA. 
 
 ARA members:
-<a href="https://randomroot18.github.io/">Arjun Pajni</a>, <a href="https://github.com/ronitr21">Ronit Ray</a> , <a href ="https://github.com/alexz957unc">Alexander Zheng</a>
+<a href="arjunpajni.carrd.co">Arjun Pajni</a>, <a href="https://github.com/ronitr21">Ronit Ray</a> , <a href ="https://github.com/alexz957unc">Alexander Zheng</a>
 
 Checkout our prototype <a href="https://arabeta.github.io/AiRA/src">v1</a>
 
